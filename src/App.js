@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import CarroEstado from './Components/CarroEstado';
+import CarroEfeito from './Components/CarroEfeito';
+import { CorProvider } from './Components/CarroContext';
+import CarroContexto from './Components/CarroContexto';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Exemplos de React Hooks</h1>
+
+   
+      <CarroEstado />
+
+    
+      <CarroEfeito />
+
+      <CorProvider>
+        <CarroContexto />
+     -- </CorProvider>
     </div>
   );
 }
